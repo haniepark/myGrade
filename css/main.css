@@ -21,4 +21,11 @@
 }
 .container{
 	margin-top: 55px;
+	margin-left: 55px;
+}
+
+.ass_entry{
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

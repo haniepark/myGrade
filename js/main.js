@@ -10,4 +10,34 @@ $(function(){ // In jQuery 1.6+ this is the same as $(document).ready(function()
 		
 		$sumDisplay.text(sum);
 	});
+
+
+	//checkbox
+	/*
+	if($('input[id=ass]').is(':checked')){// this will return true is the checkbox is checked, if not it will return false.
+		$("#assignments").toggle();
+	}
+	*/
+
+	var $ass = $('input[id=ass]');
+
+	$ass.change(function(){
+		$("#assignments").toggle($ass.is(':checked'));
+
+		//$("#assignments").toggle('slow', function(){$ass.is(':checked')});
+
+		/*
+		$("#assignments").toggle(
+			function(){
+				if($ass.is(':checked')){
+					$("#assignments").toggle("slow");
+				}
+			}
+			
+			);
+*/
+
+	});
+	$("input[id=ass]:checked").change();
+
 });
