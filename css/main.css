@@ -25,9 +25,13 @@
 }
 
 .entry{
-	display: block;
+	display: inline-block;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	width: 100%;
+}
+input{
+	width: 30px;
 }
 
 
