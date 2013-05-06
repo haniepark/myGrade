@@ -1,7 +1,8 @@
 $(function(){ // In jQuery 1.6+ this is the same as $(document).ready(function(){}).
 	var $form = $('#marks'), $summands = $form.find('.assignments'), $sumDisplay = $('#result');
 	
-	$form.delegate('.assignments', 'change', function(){
+	// Computing marks.
+	$form.on('change','.assignments', function(){
 		var sum = 0;
 		$summands.each(function(){
 			var val = Number($(this).val());
@@ -12,32 +13,16 @@ $(function(){ // In jQuery 1.6+ this is the same as $(document).ready(function()
 	});
 
 
-	//checkbox
-	/*
-	if($('input[id=ass]').is(':checked')){// this will return true is the checkbox is checked, if not it will return false.
-		$("#assignments").toggle();
-	}
-	*/
-
-	var $ass = $('input[id=ass]');
-
-	$ass.change(function(){
-		$("#assignments").toggle($ass.is(':checked'));
-
-		//$("#assignments").toggle('slow', function(){$ass.is(':checked')});
-
-		/*
-		$("#assignments").toggle(
-			function(){
-				if($ass.is(':checked')){
-					$("#assignments").toggle("slow");
-				}
-			}
-			
-			);
-*/
-
+	// Toggling fields corresponding to the switches below.
+	$('input').on('change', function(){
+		var btn = $(this).closest('input.off');
+		if($(btn).is(':checked')){
+			//$(this).closest('#assignment').find('.entries').hide();
+			$(this).closest('section').find('.entries').hide();
+		}
+		else{
+			$(this).closest('section').find('.entries').show();
+		}
 	});
-	$("input[id=ass]:checked").change();
 
 });

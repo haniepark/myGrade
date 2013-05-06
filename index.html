@@ -27,6 +27,70 @@
 		</div>
 		
 		<div class="container">
+            <!-- form for marks -->
+            <form id="marks">
+                <!-- assignments-->
+                <section>
+                    <h2> Do you have assignment(s)? </h2>
+                    <div class="checkbox">
+                        <input class="on" type="radio" name="s1" id="assOn" value="1" hidden="" checked="">
+                        <label for="assOn" class="switch switch--on">Yes</label>
+                        <input class="off" type="radio" name="s1" id="assOff" value="0" hidden="">
+                        <label for="assOff" class="switch switch--off">No</label>
+                    </div>
+
+                    <div class="entries">
+                        <label class="entry">Ass1 : <input class="assignments"/> </label>
+                        <label class="entry">Ass2 : <input class="assignments"/></label>
+                    </div>
+
+                </section>
+
+                <!-- midterms-->
+                <section>
+                    <h2> Do you have Midterm(s)? </h2>
+                    <div class="checkbox">
+                        <input class="on" type="radio" name="s2" id="midOn" value="1" hidden="" checked="">
+                        <label for="midOn" class="switch switch--on">Yes</label>
+                        <input class="off" type="radio" name="s2" id="midOff" value="0" hidden="">
+                        <label for="midOff" class="switch switch--off">No</label>
+                    </div>
+
+                    <div class="entries">
+                        <label class="entry">Midterm 1 : <input class="midterms"/> </label>
+                        <label class="entry">midterm 2 : <input class="midterms"/></label>
+                    </div>
+
+                </section>
+
+                <!-- final-->
+                <section>
+                    <h2> Do you have Final(s)? </h2>
+                    <div class="checkbox">
+                        <input class="on" type="radio" name="s3" id="finalOn" value="1" hidden="" checked="">
+                        <label for="finalOn" class="switch switch--on">Yes</label>
+                        <input class="off" type="radio" name="s3" id="finalOff" value="0" hidden="">
+                        <label for="finalOff" class="switch switch--off">No</label>
+                    </div>
+
+                    <div class="entries">
+                        <label class="entry">Final 1 : <input class="finals"/> </label>
+                        <label class="entry">Final 2 : <input class="finals"/></label>
+                    </div>
+
+                </section>
+                
+
+                
+                
+
+                
+
+
+
+            </form>
+
+        <!--
 		<form id="marks">
             <input type="checkbox" id="ass" checked> Do you have assignments?
             <div id="assignments">
@@ -34,6 +98,7 @@
     			<label class="ass_entry">Ass2 : <input class="assignments"/></label>
             </div>
 		</form>
+    -->
 		<br/>
 		<p>Result: <span id="result"/></p>
 		
