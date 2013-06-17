@@ -24,17 +24,47 @@
 	margin-left: 55px;
 }
 
+.wrap {
+	width: 380px;	
+}
+
 .entry{
 	display: inline-block;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	width: 100%;
+	width: 150px;
 }
+.entry:nth-child(even) {
+	width: 210px;
+}
+
 input{
 	width: 30px;
 }
 
+/*button styling*/
 
+.btn {
+	display: inline;
+	padding: 2px 7px;
+	border: 1px solid black;
+	text-decoration: none;
+}
+.btn:visited {
+	color: #333;
+}
+.btn.plus {
+	background-color: #BCBCBC;
+}
+.btn.minus {
+	background-color: #E9E9E9;
+}
+
+
+p {
+	display: inline;
+	margin-left: 10px;
+}
 
 /** %[Object] Switch */
 /*------------------------------------*/
@@ -53,7 +83,10 @@ input{
 	-o-transition: .15s ease;
 	transition: .15s ease;
 }
-
+.switch {
+	background-color: #252C34;
+	color:#4E5C6C;	
+}
 input[type="radio"]:checked + .switch {
 	color: #fff;
 	padding-left: 1em;

@@ -39,11 +39,23 @@
                         <label for="assOff" class="switch switch--off">No</label>
                     </div>
 
-                    <div class="entries">
-                        <label class="entry">Ass1 : <input class="assignments"/> </label>
-                        <label class="entry">Ass2 : <input class="assignments"/></label>
+                    <div class="entries" id="assign">
+                      <div class="wrap">
+                        <label class="entry">Assignment 1 : 
+                        	<input class="assign" placeholder="  %"/> 	
+                        </label>
+						
+						<label class="entry">
+						<p>weight factor : </p>
+                        	<input class="weight" placeholder="  %"/>
+                            <a href="#" class="btn plus">+</a>
+                            <a href="#" class="btn minus" disabled="disabled">-</a>
+						</label>
+                      </div> <!--.wrap-->
+                       
                     </div>
-
+                    
+					<div id="hi"></div>
                 </section>
 
                 <!-- midterms-->
@@ -57,12 +69,17 @@
                     </div>
 
                     <div class="entries" id="mid">
-                        <label class="entry">Midterm 1 : 
-                            <input class="midterms"/>
-                            <a href="#" class="btn plus">+</a>
-                            <a href="#" class="btn minus">-</a>
-                        </label>
-                        
+                       <div class="wrap">
+	                        <label class="entry">Midterm 1 : 
+	                            <input class="midterms" placeholder="  %"/>
+	                        </label>
+	                        <label class="entry">
+							<p>weight factor : </p>
+	                        	<input class="weight" placeholder="  %"/>
+	                            <a href="#" class="btn plus">+</a>
+	                            <a href="#" class="btn minus" disabled="disabled">-</a>
+							</label>
+                       </div> <!--.wrap-->
                     </div>
 
                 </section>
@@ -77,10 +94,19 @@
                         <label for="finalOff" class="switch switch--off">No</label>
                     </div>
 
-                    <div class="entries">
-                        <label class="entry">Final 1 : <input class="finals"/> </label>
-                        <label class="entry">Final 2 : <input class="finals"/></label>
-                    </div>
+                    <div class="entries" id="final">
+	                   <div class="wrap">
+	                        <label class="entry">Final 1 :
+		                        <input class="final" placeholder="  %"/>
+	                         </label>
+	                         <label class="entry">
+							 	<p>weight factor : </p>
+							 	<input class="weight" placeholder="  %"/>
+							 	<a href="#" class="btn plus">+</a>
+							 	<a href="#" class="btn minus" disabled="disabled">-</a>
+						</label>
+	                   </div>
+	                </div>
 
                 </section>
                 
